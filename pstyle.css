@@ -40,7 +40,7 @@ body {
 /* "Голова" страницы */
 
 .head {
-    background: url(ygq94g0iamwotuf17gocyyx1g4vsj11r9bd99h8w34crl3csv51wdrbihw0yrqmp.jpg);
+    background: url(img/background.jpg);
     background-size: cover;
     min-height: 100vh;
     display: flex;
