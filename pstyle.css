@@ -1,0 +1,189 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: #fff;
+    text-align: center;
+}
+
+html,
+body {
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+    font-family: Montserrat;
+}
+
+/* Выше обнуляющие стили */
+
+
+/* "Голова" страницы */
+
+.head {
+    background: url(ygq94g0iamwotuf17gocyyx1g4vsj11r9bd99h8w34crl3csv51wdrbihw0yrqmp.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: ani 2.0s forwards;
+}
+
+/* Кейфреймы для плавного появления странице */
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+/* Текст приветствия  */
+
+.first_text {
+    font-size: 50px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 280px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1;
+    transform: translateY(150%);
+    animation: ana 1s forwards;
+}
+
+
+/* -------КАЛЬКУЛЯТОР--------- */
+
+/* Подтекст про проект калькулятора */
+
+.pod_text_calc { 
+    font-size: 18px;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+    bottom: 470px;
+    transform: translateY(150%);
+    animation: ana 1s forwards;
+}   
+
+/* Титл про калькулятор */
+
+.calc {
+    font-size: 20px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    z-index: 2;
+    left: 15px;
+    position: absolute;
+    bottom: 500px;
+    font-weight: bold;
+    transform: translateY(150%);
+    animation: ana 1s forwards;
+}
+
+/* Кейфремы для контейнера и текстов про калькулятор */
+
+@keyframes ana {
+    0% {transform: translateY(50%);}
+    100% {transform: translateY(0);}
+  }
+
+/* Сам контейнер калькулятора */
+
+.container {
+    width: 515px; 
+    left: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    border: 5px solid #333;
+    padding: 80px;
+    border-radius: 10px;
+    z-index: 200;
+    bottom: 380px;
+    z-index: 1;
+    transform: translateY(50%);
+    animation: ana 1s forwards;
+}
+
+/* Ссылка на гитхаб с анимациями */
+
+.git {
+    font-family: Montserrat;
+    font-size: 20px;
+    z-index: 2;
+    left: 220px;
+    position: absolute;
+    bottom: 400px; /* Задание значения top */
+    cursor: pointer;
+    transform: translateY(-50%);
+    animation: ana 1s forwards;
+}
+
+
+.git:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 25px #fbfcfc,
+                0 0 50px #f0f3f3,
+                0 0 100px #f4f6f6;
+ 
+}
+
+.git:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.git:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+     
+
+/* Оверлей для затемнения фона */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
