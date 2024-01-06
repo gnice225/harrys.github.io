@@ -82,21 +82,72 @@ body {
 
 
 .head_text {
+    font-weight: bold;
     font-size: 80px;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: JetBrains Mono;
     align-items: ani 2.0s forwards;
     text-align: center;
     z-index: 2;
 }
 
-.po_text {
-    font-size: 10px;
-    text-transform: uppercase;
-    font-family: Montserrat;
-    z-index: 2;
+
+
+
+@keyframes ana {
+    0% {transform: translateY(50%);}
+    100% {transform: translateY(0);}
+  }
+
+.ps_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.po_text {
+    font-family: JetBrains Mono;
+    font-size: 25px;
+    text-transform: uppercase;
+    z-index: 2;
+    cursor: pointer;
+    transform: translateY(-50%);
+    animation: ana 1s forwards;
+}
+
+.po_text:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 25px #fbfcfc,
+                0 0 50px #f0f3f3,
+                0 0 100px #f4f6f6;
+ 
+}
+
+.po_text:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.po_text:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+   
 
 .overlay {
     width: 100%;
@@ -112,7 +163,7 @@ body {
     display: none;
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 720px) {
     .video-container video {
       display: none;
     }
