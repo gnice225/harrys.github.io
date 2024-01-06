@@ -37,6 +37,12 @@ body {
 /* Выше обнуляющие стили */
 
 
+@font-face {
+    font-family: 'MyFont';
+    src:  url('ttf/JetBrainsMonoNL-Bold.ttf') format('truetype');
+    /* Дополнительные свойства для настройки шрифта, если необходимо */
+}
+
 /* "Голова" страницы */
 
 .head {
@@ -69,7 +75,7 @@ body {
 
 .first_text {
     font-size: 50px;
-    font-family: Montserrat;
+    font-family: MyFont;
     text-transform: uppercase;
     position: relative;
     bottom: 280px;
@@ -100,7 +106,7 @@ body {
 
 .calc {
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: MyFont;
     text-transform: uppercase;
     z-index: 2;
     left: 15px;
@@ -138,7 +144,7 @@ body {
 /* Ссылка на гитхаб с анимациями */
 
 .git {
-    font-family: Montserrat;
+    font-family: MyFont;
     font-size: 20px;
     z-index: 2;
     left: 220px;
@@ -217,7 +223,7 @@ body {
     }
 
     .git {
-        font-family: Montserrat;
+        font-family: MyFont;
         font-size: 20px;
         z-index: 2;
         left: 190px;
@@ -231,7 +237,7 @@ body {
     
     .calc {
         font-size: 20px;
-        font-family: Montserrat;
+        font-family: MyFont;
         text-transform: uppercase;
         z-index: 2;
         left: 20px;
