@@ -202,7 +202,7 @@ body {
     }
 
     .container {
-        width: 405px; 
+        width: 410px; 
         left: 5px;
         background-color: rgba(0, 0, 0, 0.4);
         position: absolute;
@@ -246,7 +246,7 @@ body {
         font-size: 18px;
         z-index: 2;
         position: absolute;
-        left: -25px;
+        left: -15px;
         bottom: 480px;
         transform: translateY(150%);
         animation: ana 1s forwards;
