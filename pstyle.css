@@ -246,7 +246,7 @@ body {
         font-size: 18px;
         z-index: 2;
         position: absolute;
-        left: -5px;
+        left: -15px;
         bottom: 480px;
         transform: translateY(150%);
         animation: ana 1s forwards;
