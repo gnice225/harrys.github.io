@@ -202,15 +202,15 @@ body {
     }
 
     .container {
-        width: 515px; 
-        left: 100px;
+        width: 380px; 
+        left: 5px;
         background-color: rgba(0, 0, 0, 0.4);
         position: absolute;
         border: 5px solid #333;
         padding: 80px;
         border-radius: 10px;
         z-index: 200;
-        bottom: 850px;
+        bottom: 400px;
         z-index: 1;
         transform: translateY(50%);
         animation: ana 1s forwards;
@@ -220,9 +220,9 @@ body {
         font-family: Montserrat;
         font-size: 20px;
         z-index: 2;
-        left: 330px;
+        left: 170px;
         position: absolute;
-        bottom: 859px; /* Задание значения top */
+        bottom: 410px; /* Задание значения top */
         cursor: pointer;
         transform: translateY(-50%);
         animation: ana 1s forwards;
@@ -234,9 +234,9 @@ body {
         font-family: Montserrat;
         text-transform: uppercase;
         z-index: 2;
-        left: 110px;
+        left: 20px;
         position: absolute;
-        bottom: 970px;
+        bottom: 535px;
         font-weight: bold;
         transform: translateY(150%);
         animation: ana 1s forwards;
@@ -246,8 +246,8 @@ body {
         font-size: 18px;
         z-index: 2;
         position: absolute;
-        left: 110px;
-        bottom: 950px;
+        left: -5px;
+        bottom: 480px;
         transform: translateY(150%);
         animation: ana 1s forwards;
     }   
