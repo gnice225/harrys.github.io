@@ -202,7 +202,7 @@ body {
     }
 
     .container {
-        width: 420px; 
+        width: 415px; 
         left: 5px;
         background-color: rgba(0, 0, 0, 0.4);
         position: absolute;
@@ -220,7 +220,7 @@ body {
         font-family: Montserrat;
         font-size: 20px;
         z-index: 2;
-        left: 180px;
+        left: 170px;
         position: absolute;
         bottom: 410px; /* Задание значения top */
         cursor: pointer;
@@ -246,7 +246,7 @@ body {
         font-size: 18px;
         z-index: 2;
         position: absolute;
-        left: -17px;
+        left: -25px;
         bottom: 480px;
         transform: translateY(150%);
         animation: ana 1s forwards;
