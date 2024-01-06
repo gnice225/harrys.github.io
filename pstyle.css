@@ -127,7 +127,7 @@ body {
 /* Сам контейнер калькулятора */
 
 .container {
-    width: 525px; 
+    width: 535px; 
     left: 6px;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
