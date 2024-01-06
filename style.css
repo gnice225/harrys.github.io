@@ -34,6 +34,12 @@ body {
     font-family: Montserrat;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src:  url('ttf/JetBrainsMonoNL-Bold.ttf') format('truetype');
+    /* Дополнительные свойства для настройки шрифта, если необходимо */
+}
+
 .head {
     background-size: cover;
     min-height: 100vh;
@@ -85,7 +91,7 @@ body {
     font-weight: bold;
     font-size: 80px;
     text-transform: uppercase;
-    font-family: JetBrains Mono;
+    font-family: MyFont;
     align-items: ani 2.0s forwards;
     text-align: center;
     z-index: 2;
@@ -106,7 +112,7 @@ body {
 }
 
 .po_text {
-    font-family: JetBrains Mono;
+    font-family: MyFont;
     font-size: 25px;
     text-transform: uppercase;
     z-index: 2;
