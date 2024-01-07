@@ -147,7 +147,7 @@ body {
     font-family: MyFont;
     font-size: 20px;
     z-index: 2;
-    left: 220px;
+    left: 230px;
     position: absolute;
     bottom: 400px; /* Задание значения top */
     cursor: pointer;
